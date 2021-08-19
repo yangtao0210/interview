@@ -1,4 +1,4 @@
-package review.gk.design_model.proandcon;
+package review.gk.design_model.publish;
 
 import java.util.Random;
 import java.util.Vector;
