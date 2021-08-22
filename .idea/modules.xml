@@ -3,8 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/interview.iml" filepath="$PROJECT_DIR$/.idea/interview.iml" />
-      <module fileurl="file://$PROJECT_DIR$/review_code/rabbitmq/rabbitmq.iml" filepath="$PROJECT_DIR$/review_code/rabbitmq/rabbitmq.iml" />
       <module fileurl="file://$PROJECT_DIR$/review_code/review_code.iml" filepath="$PROJECT_DIR$/review_code/review_code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rpc/rpc.iml" filepath="$PROJECT_DIR$/rpc/rpc.iml" />
     </modules>
   </component>
 </project>
