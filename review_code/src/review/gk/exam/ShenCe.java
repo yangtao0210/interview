@@ -1,3 +1,5 @@
+package review.gk.exam;
+
 import java.util.*;
 
 public class ShenCe {

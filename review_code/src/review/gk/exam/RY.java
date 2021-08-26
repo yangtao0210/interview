@@ -1,3 +1,5 @@
+package review.gk.exam;
+
 import java.util.*;
 public class RY{
     public static void main(String[] args){
