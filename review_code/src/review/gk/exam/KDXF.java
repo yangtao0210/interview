@@ -1,6 +1,8 @@
 package review.gk.exam;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
@@ -17,6 +19,9 @@ public class KDXF {
         for(double p : pro){
             System.out.println(p);
         }
+        ArrayList<Object> objects = new ArrayList<>();
+        
+
     }
     public static int getMax(int[] nums){
         int res = 0;
@@ -33,6 +38,7 @@ public class KDXF {
             res = Math.max(right-left+1,res);
             System.out.println(Arrays.toString(nums));
         }
+
         return res;
     }
 
