@@ -5,9 +5,8 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Scanner;
 import java.util.stream.Collectors;
-
 public class KDXF {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();
         int[][] steps = new int[n][2];
@@ -20,8 +19,6 @@ public class KDXF {
             System.out.println(p);
         }
         ArrayList<Object> objects = new ArrayList<>();
-        
-
     }
     public static int getMax(int[] nums){
         int res = 0;
