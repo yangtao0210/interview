@@ -1,8 +1,6 @@
 package review.gk.exam;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Scanner;
+import java.util.*;
 
 public class XM {
     public static void main(String[] args){
@@ -22,6 +20,9 @@ public class XM {
         for(int i =0; i < n;i++){
             b[i] = Integer.parseInt(nsplit[i]);
         }
+        PriorityQueue<Map.Entry<Integer,Integer>> queue = new PriorityQueue<>(((o1, o2) -> {
+            return o1.getValue() - o2.getValue();
+        }));
         int x = m;
         for(int i=0; i < b.length; i++) {
             a[x++] = b[i];
@@ -31,5 +32,6 @@ public class XM {
         for (int i = 0; i < a.length;i++){
             System.out.println(a[i]);
         }
+
     }
 }
