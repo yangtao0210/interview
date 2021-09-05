@@ -32,6 +32,7 @@ public class XM {
         for (int i = 0; i < a.length;i++){
             System.out.println(a[i]);
         }
+        List<Integer> list = new ArrayList<>();
 
     }
 }
