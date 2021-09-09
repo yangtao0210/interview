@@ -1,0 +1,43 @@
+spring:
+  #配置thymeleaf
+  thymeleaf:
+    cache: false
+  #配置数据源
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/seckill?useUnicode=true&characterEncoding=UTF-8&serverTimeZone=Asia/Chongqing
+    username: root
+    password: root
+    hikari:
+      #连接池配置
+      pool-name: DataHikari
+      #最小连接数
+      minimum-idle: 5
+      #空闲最大存活时间（默认600000,10分钟）
+      idle-timeout: 1800000
+      #最大连接数
+      maximum-pool-size: 10
+      #从连接池返回的连接自动提交
+      auto-commit: true
+      #连接最大存活时间：0,永久存活，默认1800000
+      max-lifetime: 1800000
+      #连接超时时间
+      connection-timeout: 30000
+      #心跳配置：测试连接是否可用的查询语句
+      connection-test-query: SELECT 1
+
+
+#mybatis-plus配置
+mybatis-plus:
+  #配置映射文件
+  mapper-locations: classpath*:/mapper/*Mapper.xml
+  #配置mybatis数据返回类型别名（默认别名是类名）
+  type-aliases-package: ms.cqupt.secskill.pojo
+
+
+#配置日志:打印sql（方法接口所在包,不是Mapper.xml的包）
+logging:
+  level:
+    ms.cqupt.secskill.mapper: debug
+
+
