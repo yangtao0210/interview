@@ -1,4 +1,4 @@
-package gen.cqupt.generator;
+package ms.cqupt.generator;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

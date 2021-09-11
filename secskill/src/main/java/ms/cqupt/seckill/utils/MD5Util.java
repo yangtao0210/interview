@@ -1,4 +1,4 @@
-package ms.cqupt.secskill.utils;
+package ms.cqupt.seckill.utils;
 
 import org.apache.commons.codec.digest.DigestUtils;
 import org.junit.Test;
