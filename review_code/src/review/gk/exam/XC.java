@@ -1,7 +1,7 @@
 package review.gk.exam;
 
 import java.util.*;
-public class test {
+public class XC {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
