@@ -5,6 +5,60 @@
     <title>登录</title>
 </head>
 <body>
+<script></script>
+<script>
+    pwd_salt = "1a2b3c4d";
+    function login() {
 
+        $("#phoneNumber").validate({
+           submitHandler:function (form) {
+               doLogin();
+           }
+        });
+        function doLogin() {
+            var pwd = $("#password").val();
+            console.log(pwd);
+            var salt = pwd_salt;
+            var password = ""+salt.charAt(1)+salt.charAt(3)+ pwd + salt.charAt(2)+salt.charAt(4);
+
+            $.ajax({
+               url:"/login/doLogin",
+                type:"POST",
+                data:{
+                   mobile:$("#phoneNumber").val(),
+                    password:password
+                },
+                success:function (data) {
+                   if(data.code == 200){
+                       alert("登录成功");
+                   } else{
+                       alert(data.message);
+                   }
+                },
+                error:function () {
+                   alert("登录出错！")
+                }
+            });
+        }
+    }
+</script>
+<table>
+    <tr>
+        <td>手机号:</td>
+        <td>
+            <input type="text" id = "phoneNumber">
+        </td>
+    </tr>
+    <tr>
+        <td>密码:</td>
+        <td>
+            <input type="password" id = "password">
+        </td>
+    </tr>
+    <tr>
+        <td><button id="register" onclick = "login()">注册</button></td>
+        <td><button id="login" >登录</button></td>
+    </tr>
+</table>
 </body>
 </html>

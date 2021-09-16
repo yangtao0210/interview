@@ -1,4 +1,4 @@
 package ms.cqupt.seckill.service;
 
-public class UserService {
+public interface UserService {
 }

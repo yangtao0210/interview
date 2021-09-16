@@ -45,11 +45,4 @@ public class MD5Util {
         String dbPass = fromPassToDBPass(fromPass,salt);
         return dbPass;
     }
-
-    @Test
-    public void test(){
-        System.out.println(inputPassToFromPass("123456"));
-        System.out.println(fromPassToDBPass("frer9f98ff8f0d8f09d8fd","1a2b3c4d"));
-        System.out.println(inputPassToDBPass("123456","1a2b3c4d"));
-    }
 }

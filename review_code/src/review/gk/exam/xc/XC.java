@@ -1,4 +1,4 @@
-package review.gk.exam;
+package review.gk.exam.xc;
 
 import java.util.*;
 public class XC {
