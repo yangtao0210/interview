@@ -1,5 +1,12 @@
 package review.gk.exam.tecent;
 
+import com.sun.javaws.exceptions.UnsignedAccessViolationException;
+
+import java.io.Console;
+import java.rmi.AccessException;
+import java.util.Hashtable;
+import java.util.Vector;
+
 class TreeNode{
     public int getVal() {
         return val;
@@ -22,18 +29,29 @@ class TreeNode{
 
 }
 public class FirstInterview {
+    private static int i =1;
+    public int getNext(){
+        return i++;
+    }
     public static void main(String[] args) {
-        TreeNode first = new TreeNode(1);
-        TreeNode second = new TreeNode(2);
-        TreeNode third = new TreeNode(3);
-        first.setNext(second);
-        second.setNext(third);
-        third.setNext(null);
-        TreeNode r = reverLinkedList(first);
-        while(r != null){
-            System.out.print(r.getVal()+" ");
-            r = r.next;
-        }
+//        TreeNode first = new TreeNode(1);
+//        TreeNode second = new TreeNode(2);
+//        TreeNode third = new TreeNode(3);
+//        first.setNext(second);
+//        second.setNext(third);
+//        third.setNext(null);
+//        TreeNode r = reverLinkedList(first);
+//        while(r != null){
+//            System.out.print(r.getVal()+" ");
+//            r = r.next;
+//        }
+//        FirstInterview f = new FirstInterview();
+//        FirstInterview f1 = new FirstInterview();
+//        f.getNext();
+//        f1.getNext();
+//        System.out.println(f1.getNext());
+       String s = "hello\0";
+
     }
     public static TreeNode reverLinkedList(TreeNode root){
         TreeNode pre = null;
@@ -46,4 +64,5 @@ public class FirstInterview {
         }
         return pre;
     }
+
 }
