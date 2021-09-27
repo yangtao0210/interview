@@ -1,20 +1,19 @@
 package review.gk.exam.ali;
 
+import java.lang.reflect.Field;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
 public class Ali_1 {
+    private int age;
+    protected  String name;
+    public int id;
     public static void main(String[] args){
-        Scanner scan = new Scanner(System.in);
-        int n = Integer.parseInt(scan.nextLine());
-        String[] inputs = scan.nextLine().split(" ");
-        int[] highs = new int[n];
-        for(int i = 0;i < n;i++){
-            highs[i] = Integer.parseInt(inputs[i]);
-        }
-        System.out.println(getMaxCount(n,highs));
+        System.out.println((10/3)*2%5);
+        StringBuffer sb = new StringBuffer("abfd");
+        System.out.println(sb.capacity());
     }
     public static int getMaxCount(int n,int[] highs){
         int max = 1;
