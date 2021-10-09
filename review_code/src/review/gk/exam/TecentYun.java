@@ -11,7 +11,30 @@ class TreeNode{
     TreeNode right;
 
 }
+
 public class TecentYun {
+    public static void main(String[] args) {
+        int[] path = new int[]{1,2,3};
+        int[] path1 = new int[]{2,3,4};
+        List<List<Integer>> res = new ArrayList<>();
+        List<Integer> p1 = new ArrayList<>();
+        p1.add(1);
+        p1.add(2);
+        p1.add(3);
+        List<Integer> p2 = new ArrayList<>();
+        p2.add(2);
+        p2.add(3);
+        p2.add(4);
+        res.add(p1);
+        res.add(p2);
+        for (List<Integer> l : res){
+            System.out.println(l.toString()+"\t");
+        }
+    }
+
+    
+
+
     public List<TreeNode> tree(TreeNode root){
         //存储遍历结果
         List<TreeNode> nodeList = new ArrayList<>();
